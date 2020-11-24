@@ -16,10 +16,10 @@ class CreateFilmsTable extends Migration
         Schema::create('films', function (Blueprint $table) {
             $table->id()->unsigned();;
             $table->string('name');
-            $table->string('description');
-            $table->decimal('rating', 16, 8);
+            $table->text('description');
+            $table->decimal('rating', 16, 2);
             $table->date('release_date');
-            $table->decimal('ticket_price', 16, 8);
+            $table->decimal('ticket_price', 16, 2);
             $table->string('country');
             $table->unsignedBigInteger('genre');
             $table->string('photo');
