@@ -16,7 +16,9 @@ class FilmsController extends Controller
      */
     public function index()
     {
-        return response()->json(['listFilms' => Film::with('filmGenre')->get()]);
+        $perPage = 1;
+        $totalFilms = Film::with('filmGenre')->paginate($perPage);
+        return response()->json(['filmsData' => $totalFilms]);
     }
 
 
