@@ -19,8 +19,8 @@ class FilmsSeeder extends Seeder
     public function run()
     {
         DB::table('films')->insert([[
-            'name' => Str::random(10),
-            'description' => Str::random(20),
+            'name' => 'Test 1',
+            'description' => 'This is test description. This is test description. This is test description. This is test description. ',
             'release_date' => Carbon::create('2000', '01', '01'),
             'rating' => '4.0',
             'ticket_price' => 500,
@@ -28,8 +28,8 @@ class FilmsSeeder extends Seeder
             'genre' => 1,
             'photo' => Str::random(10),
         ],[
-            'name' => Str::random(10),
-            'description' => Str::random(20),
+            'name' => 'Test 2',
+            'description' => 'This is test description. This is test description. This is test description. This is test description. ',
             'release_date' => Carbon::create('2000', '01', '01'),
             'rating' => '4.0',
             'ticket_price' => 500,
@@ -37,8 +37,8 @@ class FilmsSeeder extends Seeder
             'genre' => 2,
             'photo' => Str::random(10),
         ],[
-            'name' => Str::random(10),
-            'description' => Str::random(20),
+            'name' => 'Test 3',
+            'description' => 'This is test description. This is test description. This is test description. This is test description. ',
             'release_date' => Carbon::create('2000', '01', '01'),
             'rating' => '4.0',
             'ticket_price' => 500,
@@ -46,8 +46,8 @@ class FilmsSeeder extends Seeder
             'genre' => 1,
             'photo' => Str::random(10),
         ],[
-            'name' => Str::random(10),
-            'description' => Str::random(20),
+            'name' => 'Test 4',
+            'description' => 'This is test description. This is test description. This is test description. This is test description. ',
             'release_date' => Carbon::create('2000', '01', '01'),
             'rating' => '4.0',
             'ticket_price' => 500,
